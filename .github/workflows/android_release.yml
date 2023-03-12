@@ -61,24 +61,24 @@ jobs:
           done
           rm app/build/outputs/apk/common/release/*-unsigned.apk
 
-      - name: Upload apk to artifact 1
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-common-arm64-v8a-release.apk
-          path: app/build/outputs/apk/common/release/app-common-arm64-v8a-release.apk
-
-      - name: Upload apk to artifact 2
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-common-armeabi-v7a-release.apk
-          path: app/build/outputs/apk/common/release/app-common-armeabi-v7a-release.apk
-
-      - name: Upload apk to artifact 3
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-common-universal-release.apk
-          path: app/build/outputs/apk/common/release/app-common-universal-release.apk
-
+#      - name: Upload apk to artifact 1
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: app-common-arm64-v8a-release.apk
+#          path: app/build/outputs/apk/common/release/app-common-arm64-v8a-release.apk
+#
+#      - name: Upload apk to artifact 2
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: app-common-armeabi-v7a-release.apk
+#          path: app/build/outputs/apk/common/release/app-common-armeabi-v7a-release.apk
+#
+#      - name: Upload apk to artifact 3
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: app-common-universal-release.apk
+#          path: app/build/outputs/apk/common/release/app-common-universal-release.apk
+#
 #      - name: create-gh-release
 #        uses: taiki-e/create-gh-release-action@v1
 #        with:
