@@ -45,9 +45,6 @@ android {
                 arguments["androidManifestFile"] = "$projectDir/src/main/AndroidManifest.xml"
             }
         }
-        ndk {
-            abiFilters.addAll(listOf("arm64-v8a"))
-        }
     }
     buildFeatures {
         compose = true
